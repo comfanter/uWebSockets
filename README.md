@@ -47,7 +47,7 @@ Get the sources of the uws.chat server [here](https://github.com/uWebSockets/web
 ## Perfect for WebRTC
 Distributed WebRTC networks typically employ WebSockets for peer signalling. Since every single peer in the entire distributed network requires a persistent connection to the signalling server at all times, only a scalable WebSocket server will do.
 
-## A word on wrappers
+## A word on Socket.IO and other wrappers
 
 `µWS` is simple to use but sadly even simpler to abuse. What has here been carefully hand crafted with finesse and efficiency, to allow efficient networking in high level code, is now repeatedly devastated by the complete negligence of popular wrapper modules. A steaming pile of absolute filth, built from the ground up without any regard for reality, does not magically turn into a great project by having an underlying library swapped. Projects like Socket.IO, with and without µWS is in no way a substitute for the original deal.
 
