@@ -47,6 +47,12 @@ Get the sources of the uws.chat server [here](https://github.com/uWebSockets/web
 ## Perfect for WebRTC
 Distributed WebRTC networks typically employ WebSockets for peer signalling. Since every single peer in the entire distributed network requires a persistent connection to the signalling server at all times, only a scalable WebSocket server will do.
 
+## A word on wrappers
+
+`µWS` is simple to use but saldy even simpler to abuse. What has here been carefully hand crafted with finesse and efficiency, to allow efficient networking in high level code, is now repeatedly devastated by the complete negligence of popular wrapper modules. A steaming pile of absolute filth, built from the ground up without any regard for reality, does not magically turn into a great project by having an underlying library swapped. Projects like Socket.IO, with and without µWS is in no way a substitute for the original deal.
+
+Every single well-known "real-time" library for Node.js, every single one, does in fact add a significant CPU overhead to any networking performed. Often times the overhead can be 10x or even 100x, meaning your "super efficient cluster built with µWS" has now deteriorated into a bad joke. There's no such thing as efficiency served through old and misdesigned wrapper scripts.
+
 ## Getting started
 Sources are provided as-is, without any personal support or help. There is no issue tracker due to the extensive spam of nonsense bug reports, duplicates and otherwise narcissistic demands of personal support. If you find an issue you want fixed, chances are you need to fix it yourself and send me a PR. Please try and understand though, this library sees multiple thousands of downloads every single day. This means the chance of your "this library is completely broken" bug report being valid becomes close to 0%. Please act accordingly.
 
