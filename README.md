@@ -49,7 +49,7 @@ Distributed WebRTC networks typically employ WebSockets for peer signalling. Sin
 
 ## A word on Socket.IO and other wrappers
 
-`µWS` is simple to use but sadly even simpler to abuse. What has here been carefully hand crafted with finesse and efficiency, to allow efficient networking in high level code, is now repeatedly devastated by the complete negligence of popular wrapper modules. A steaming pile of absolute filth, built from the ground up without any regard for reality, does not magically turn into a great project by having an underlying library swapped. Projects like Socket.IO, with and without µWS is in no way a substitute for the original deal.
+`µWS` is simple to use but sadly even simpler to abuse. What has here been carefully hand crafted with finesse and efficiency, to allow fast networking in high level code, is now repeatedly devastated by the complete negligence of popular wrapper modules. A steaming pile of absolute filth, built from the ground up without any regard for reality, does not magically turn into a great project by having an underlying library swapped. Projects like Socket.IO, with and without µWS is in no way a substitute for the original deal.
 
 Every single well-known "real-time" wrapper for Node.js, every single one, does in fact add a significant CPU overhead to any networking performed. The least horrible wrapper I've seen, Primus, cuts performance in half. Other wrappers come with overhead of 5x-100x, meaning your "super efficient cluster built with µWS" has now deteriorated into a bad joke. There's no such thing as efficiency served through old and misdesigned wrapper scripts.
 
